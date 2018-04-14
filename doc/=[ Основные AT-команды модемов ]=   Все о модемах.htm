@@ -1,0 +1,1838 @@
+<html><head>
+<meta name="keywords" content="сигнала, номера, модема, ответ, сигнал, время, работы, режим, команды, линии, связи, connect, сек, команда, обозначает, dtr, смотри, передачи
+">
+<meta name="description" content="Список базовых AT команд HAYES совместимого модема">
+<meta http-equiv="Content-Type" content="text/html; charset=KOI8-R"><title>=[ Основные AT-команды модемов ]= :: Все о модемах</title>
+<link rel="stylesheet" href="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/main.css" type="text/css">
+<!-- (C)2005 Gemius SA - gemiusAudience / razdel_articles -->
+<script language="javascript" type="text/javascript"><!--
+gemius_identifier = new String('bIDlbRwciRZIqP.wT6Nf6sVHj_gZBc_0UCnqUj9OXYH.c7');
+gemius_href=new String(document.location);
+if (document.referrer) { gemius_ref = new String(document.referrer); } else { gemius_ref = ""; }
+if(typeof(Error)!='undefined') eval("try { if (typeof(top.document.referrer)=='string') { gemius_ref = top.document.referrer } } catch(gemius_ex) {}");
+iname = new String('id='+gemius_identifier+';ref='+escape(gemius_ref.substring(0,299))+';href='+escape(gemius_href.substring(0,299))+';');
+document.write('<div style="position:absolute; left:-500px; top:-500px;"><iframe src="http://ua.hit.gemius.pl/gemiusaudience.html" name="'+iname+'" width="1" height="1" frameborder="0" scrolling="no"></iframe></div>');
+//-->
+</script></head><body bgcolor="#003366"><div style="position:absolute; left:-500px; top:-500px;"><iframe src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/gemiusaudience.htm" name="id=bIDlbRwciRZIqP.wT6Nf6sVHj_gZBc_0UCnqUj9OXYH.c7;ref=http%3A//yandex.ru/clck/jsredir%3Ffrom%3Dyandex.ru%253Byandsearch%253Bweb%253B%253B%26text%3Dat%2520%25D0%25BA%25D0%25BE%25D0%25BC%25D0%25B0%25D0%25BD%25D0%25B4%25D1%258B%2520GSM%2520%25D0%25BC%25D0%25BE%25D0%25B4%25D0%25B5%25D0%25BC%25D0%25B0%26uuid%3D%26state%3DAiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9Xsh9AmfW_e8f99H_qfAsxC8CPVL5S9PzBHnNztlOaPdWUBWVCTfCuCC2v3H-5oicOIy8Gbx_tk5MfX;href=http%3A//v90.kiev.ua/articles/at_commands.html;" frameborder="0" height="1" scrolling="no" width="1"></iframe></div> <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1451271-8");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<p>
+<table border="0" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td> <a href="http://v90.kiev.ua/"><img src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/HAT_NEW.jpg" alt="настройки модемов" border="0" height="120" width="500"></a></td>
+<td valign="bottom"> </td>
+</tr>
+</tbody>
+</table>
+</p>
+<div align="center"><strong><a href="http://v90.kiev.ua/sale/services.html"><font color="#FF0000" size="-1">Есть выход! &nbsp;Скорая
+компьютерная помощь с доставкой.&nbsp;Поделитесь своими
+проблемами, а мы поделимся их решением!
+</font></a></strong></div>
+<table bgcolor="#003366" border="0" cellspacing="0" height="3" width="100%">
+<tbody><tr><td></td></tr>
+</tbody></table>
+<table bgcolor="#ffcc99" border="0" cellspacing="0" height="10" width="100%">
+<tbody><tr><td align="center" height="10" valign="middle"><h1 style="margin:0 0 0 0 px;">Основные AT-команды модемов</h1></td></tr>
+</tbody></table>
+<table bgcolor="#003366" border="0" cellpadding="1" cellspacing="1" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#666666" width="16%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/"><nobr><b>Главная страница</b></nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="16%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/modem/"><nobr>Описание модемов</nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="12%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/faq/"><nobr>Вопрос-ответ</nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="16%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/"><nobr><b>Статьи о модемах</b></nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="20%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/init/"><nobr>Строки инициализации</nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="6%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/catalog/"><nobr>Ссылки</nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="4%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/humor/"><nobr>Юмор</nobr></a> </td></tr></tbody></table>
+</td>
+<td align="center" bgcolor="#666666" width="8%">
+<table bgcolor="DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/maintenance/"><nobr>По сайту</nobr></a> </td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+<br>
+<table bgcolor="White" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="right" bgcolor="#003366" valign="top" width="165">
+<br>
+<table bgcolor="#003366" border="0" cellpadding="1" cellspacing="1" width="165">
+<tbody><tr><td align="center" bgcolor="#ffcc99" valign="top"><noindex><a rel="nofollow" href="http://www.rdm.kiev.ua/"><font color="#003366" face="verdana">Восстановление данных в Киеве ...</font></a></noindex></td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/terms.html"><nobr>Словарик</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<nobr><strong>AT команды</strong></nobr>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/tips.html"><nobr>Советы</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/chto_delat.html"><nobr>Что делать<br> и кто виноват</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/tweaking.html"><nobr>Тонкости настройки</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/razborka_modema.html"><nobr>Разборка GVC R21</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/protocol.html"><nobr>Основные протоколы</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/v42b.html"><nobr>V.42bis</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/net_tools.html"><nobr>Сетевые утилиты</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/regedit.html"><nobr>RegEdit.EXE</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/hyperterminal.html"><nobr>Hyper Terminal</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/telnet_mail.html"><nobr>Работа с POP3/SMTP<br>через Telnet</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr>
+<td bgcolor="#666666">
+<table bgcolor="#DDDDDD" border="0" cellpadding="2" cellspacing="2" width="100%">
+<tbody><tr>
+<td align="center" bgcolor="#ffcc99">
+<a href="http://v90.kiev.ua/articles/callback_freebsd.html"><nobr>CallBack под FreeBSD</nobr></a>
+</td></tr></tbody></table>
+</td></tr>
+<tr><td align="center" bgcolor="#ffcc99" valign="top"> <b>Хостинг предоставлен:</b> <br> <noindex><a rel="nofollow" href="http://hostia.ru/billing/host.php?uid=2316&amp;bid=1" target="_blank">hostia.ru</a></noindex></td></tr>
+<tr><td align="center" bgcolor="#ffcc99" valign="top">V90 рекомендует <noindex><a rel="nofollow" href="http://firefox.nov.ru/">скачать FireFox</a></noindex> с панелью инструментов Google.</td></tr>
+<tr><td></td></tr>
+<tr>
+<td>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8041315013126943";
+/* v90-120x600 */
+google_ad_slot = "2036835812";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:120px;background-color:transparent"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" frameborder="0" height="600" scrolling="no" width="120"></iframe></ins></ins>
+</td></tr>
+</tbody></table>
+<br>
+</td>
+<td bgcolor="#003366" width="10">&nbsp;</td>
+<td width="12">&nbsp;</td>	<td valign="top"><br><h1 align="center"> АТ команды модема </h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Практически каждый модем
+ рекламируется как Hayes-совместимый, т. е. понимающий большинство 
+команд языка AT, разработанного компанией Hayes в 70-е годы. Чтобы 
+использовать модем, вам не обязательно знать команды AT, но иногда 
+применение правильной инструкции способно дать модему "второе дыхание". 
+Имейте в виду, что не все команды работают со всеми модемами, а каждая 
+конкретная модель поддерживает лишь основные команды языка Hayes и имеет
+ набор своих собственных (и весьма полезных) команд. Подробная 
+информация об этом содержится в документации на модем и на Web-сервере 
+поставщика. Чтобы воспользоваться командами AT, запустите утилиту <a href="http://v90.kiev.ua/articles/hyperterminal.html">Hyper Terminal</a> или Терминал, входящий в пакет Norton Commander 5.0. <h3 align="center"> Основной набор команд HAYES совместимых моделей модемов.</h3>
+<h4 align="center"> Стандартный набор АТ команд настройки модема</h4>
+<p> Некоторые из этих команды могут отсутствовать в Вашем модеме, или иметь немного отличающиеся функции. </p>
+<table cellpadding="5" width="100%">
+<tbody><tr> <td align="center" valign="top"><b>AT</b></td>
+<td>Начало (префикс) командной строки. Эти две буквы являются префиксом 
+для остальных команд, и в тоже время имеют самостоятельное значение. Это
+ так называемая пустая команда. После получения этой команды модем 
+автоматически подстраивает скорость передачи и формат знака к параметрам
+ терминала.</td>
+</tr>
+<tr> <td align="center" valign="top"><b>A/</b></td>
+<td>Модем повторяет предыдущую командную строку. Внимание! Эта команда подается без префикса (AT) и нажатия &lt;CR&gt;.</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATA</b></td>
+<td> <p>Ответ</p>
+<blockquote> Параметры: отсутствуют<br>
+По умолчанию: отсутствуют
+</blockquote>
+Эта команда инициирует режим ответа. Модем выходит из режима ожидания и 
+переходит в DATA MODE (режим данные). Через 2.1 секунды (задержка 
+подтверждения) модем выдаст тональный сигнал ответа. Если по содержимому
+ регистра S7 не будет обнаружена несущая, то модем перейдет в состояние 
+ожидания и вернется в холостой режим (IDLE MODE). </td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATB</b></td>
+<td> <p>Выбор BELL/CCITT </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>1</b> </blockquote>
+Эта команда устанавливает параметры для связи со скоростью 1200 бод. <blockquote><b>ATB0</b> для стандарта CCITT V.22N <br>
+<b>ATB1</b> для стандарта Bell 212A </blockquote>
+Эта команда инициирует режим ответа. Модем выходит из режима ожидания и 
+переходит в DATA MODE (режим данные). Через 2.1 секунды (задержка 
+подтверждения) модем выдаст тональный сигнал ответа. Если по содержимому
+ регистра S7 не будет обнаружена несущая, то модем перейдет в состояние 
+ожидания и вернется в холостой режим (IDLE MODE). </td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATD</b></td>
+<td> Набор номера <blockquote> Набираемые цифры:<b> 0 1 2 3 4 5 6 7 8 9 # * A B C D</b> Разделители: ( ) &lt;ПРОБЕЛ&gt; <br>
+Модификаторы: <b>T P W @ ! R S / ; ,</b> </blockquote>
+Эта команда начинает последовательность набора номера. Когда обнаружена 
+команда "D", модем ждет 2 секунды и затем начинает набор номера. Модем 
+набирает 12 стандартных тоновых цифр. Эти цифры могут быть разделены 
+символами-разделителями, указанными выше. Модификаторы определяют 
+способ, которым будет осуществляться набор: <blockquote><b>Т</b> Тоновый набор (т.е. <b>ATDT 3451798</b>) <br>
+<b>P</b> Импульсный набор (т.е. <b>ATDP 2627506</b>)</blockquote>
+Все следующие модификаторы используются внутри строки набираемых цифр (т.е. <b>ATDT 34517W9821</b>, <b>ATDP 262@7506</b>). <blockquote><b>W</b> Ждать наборного тона </blockquote>
+Этот модификатор вызовет задержку набора до появления тонального сигнала
+ набора. Если по содержимому регистра S7 не будет обнаружен тональный 
+сигнал набора, вызов будет прерван. <blockquote><b>@</b> Ждать ответной паузы </blockquote>
+Когда в строке набора будет обнаружен этот символ, модем подождет 5-ти 
+секундной паузы. Если паузы не будет в течение 30 секунд, то вызов будет
+ прерван, и модем вернет код результата "NO ANSWER" - нет ответа. <p></p>
+<blockquote><b>!</b> Ожидание</blockquote>
+Этот символ переводит модем в состояние ожидания на 1/2 секунды. Эта возможность полезна для некоторых PBX систем. <blockquote><b>R</b> Возобновить режим ответа</blockquote>
+Когда обнаружен этот символ, модем ждет 2 секунды и затем переходит в режим ответа. Это эквивалентно команде ATA.
+<blockquote><b>S</b> Набрать хранимый номер</blockquote>
+Команда ATDS вызовет набор номера, сохраняемого в энергонезависимой памяти. Смотри описание команды сохранения на стр.30.
+<blockquote><b>/ </b> Ждать 0,125 секунды </blockquote>
+Эта пауза идентична паузе, вызванной модификатором &lt;запятая&gt;, с той лишь разницей, что длится 1 /8 секунды.
+<blockquote><b>; </b> Вернуться в командный режим </blockquote>
+Этот символ заставляет модем вернуться в IDLE MODE (холостой режим). Модем остается активизированным.	<blockquote><b>, </b> Ждать S8 секунд</blockquote>
+ Этот символ заставляет модем ждать в течение периода, который 
+определяется содержимым регистра S8. Затем модем продолжит набор номера.
+</td>
+</tr>
+<tr> </tr><tr> <td align="center" valign="top"><b>ATE</b></td>
+<td> Команда эхо
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>1 </b></blockquote>
+Эта команда управляет режимом возвращения - невозвращения командных 
+символов. При включении питания все символы, посылаемые в модем, 
+возвращаются.
+<blockquote><b>ATE0</b> Выключить возвращение команд. <br>
+<b>ATE1</b> Включить возвращение команд.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATF</b></td>
+<td> Eho data send from comрuter.
+<blockquote> <b>F0</b> Fax/modem acceрts this command, but takes no action.<br>
+<b>F1</b> Fax/modem acceрts this command, but takes no action.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATH</b></td>
+<td> Команда ожидания <blockquote> Параметры: <b>0, 1, 2</b><br>
+По умолчанию: <b>0 </b>(состояние ожидания)</blockquote>
+Управляет переключением состояния ожидания. <blockquote> <p><b>ATH0</b> Переводит модем в состояние ожидания.<br>
+<b>ATH1</b> Снимает это состояние. <br>
+<b>ATH2</b> Включена только в целях совместимости, не вызывает никаких действий.
+</p></blockquote>
+</td>
+</tr>
+<tr><td align="center" valign="top"><b>ATI</b></td>
+<td> Команда идентификации
+<blockquote> Параметры: <b>0, 1, 2</b><br>
+По умолчанию: нет</blockquote>
+Вызывает выдачу идентификационного кода модема.
+<blockquote><b>ATI0</b> Модем посылает строку "241" (может быть изменена). <br>
+<b>ATI1</b> Модем посылает строку "231" (может быть изменена). <br>
+<b>ATI2</b> Модем посылает сообщение "OK", если контрольная сумма памяти
+ совпадает, в противном случае - посылает сообщение "ERROR" (ошибка).</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATL</b></td>
+<td> Громкость звука
+<blockquote> Параметры: <b>0, 1, 2, 3</b><br>
+По умолчанию: <b>2</b></blockquote>
+<blockquote><b>ATL0</b> Низкая громкость <br>
+<b>ATL1</b> Низкая громкость<br>
+<b>ATL2</b> Средняя громкость<br>
+<b>ATL3</b> Высокая громкость</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATM</b></td>
+<td> Громкость звука
+<blockquote> Параметры: <b>0, 1, 2, 3</b><br>
+По умолчанию: <b>1 </b>(громкоговоритель включен до появления несущей)</blockquote>
+Эта команда управляет работой громкоговорителя
+<blockquote><b>ATM0</b> Громкоговоритель выключен всегда.<br>
+<b>ATM1</b> Громкоговоритель включен до появления несущей.<br>
+<b>ATM2</b> Громкоговоритель включен всегда. <br>
+<b>ATM3</b> То же, что и ATM1, но тон DTMF не слышен. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATN</b></td>
+<td> <p><b>ATN0</b> </p>
+Регистр S37 определяет скорость на которой модем осуществляет соединение с удаленным модемом. <br>
+Если S37=0 то скорость соединения совпадает со скоростью передачи данных
+ от компьютера к модему. Если скорость выбирается из более чем одного 
+стандарта (таких как BELL 212A или CCITT V.22 для скорости 1200 бит/с) 
+то это достигается варьированием команды ATB(0,1) <p><b>ATN1</b> </p>
+Соединение может происходить на любой скорости которую поддерживают и ваш и удаленный модемы. <br>
+При выборе работы по CCITT стандарту команда B игнорируется. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATO</b></td>
+<td> Готовность или исходное состояние <blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<b>ATO0</b> Работа этой команды зависит от текущего режима модема.<br>
+<br>
+Если модем находится в командном режиме (COMMAND MODE), команда ATO0 
+переведет модем в режим данных (DATA MODE) и инициализирует установление
+ связи на скорости автоматически установленной командой "AT". Этой 
+команде должна предшествовать команда ATH1 для выведения модема из 
+режима ожидания.<br><br>
+Если модем находится в интерактивном режиме (ON-LINE INTERACTIVE MODE), команда ATO0 вернет модем в режим DATA MODE.<br><br>
+<b>ATO1</b> Если модем находится в режиме ON-LINE INTERACTIVE MODE, 
+команда ATO1 запросит настроечную последовательность от другого модема. 
+Эта команда может быть использована только если модем соединен в режиме 
+V.22bis (2400 бод). </td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATQ</b></td>
+<td> <p>Управление кодом ответа </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+Эта команда управляет посылкой ответных сообщений к DTE. Пользователь 
+должен обеспечить время, необходимое для завершения команды. <p></p>
+<blockquote><b>ATQ0</b> Разрешить ответные сообщения.<br>
+<b>ATQ1</b> Запретить ответные сообщения. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATSr?</b></td>
+<td> <p>Запрос S регистра </p>
+<blockquote> Параметры: <b>0</b> ...<b>16</b><br>
+По умолчанию: <b>0</b></blockquote>
+Эта команда возвращает десятичную величину, хранящуюся в выбранном S 
+регистре. Например, для получения содержимого регистра 7, выполните 
+ATS7?
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATSr=n</b></td>
+<td> <p>Установка регистра</p>
+<blockquote> Параметры: <b>r=0...16 n=0...255</b> <br>
+По умолчанию:<b>r=0 n=0</b></blockquote>
+Эта команда используется для загрузки значения в S регистр. Например, для установки 3 в регистр 0, выполните ATS0=3. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATV</b></td>
+<td> <p>Развернутый или сжатый код ответа</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>1</b> (развернутый) </blockquote>
+Эта команда управляет форматом кода ответа. <blockquote><b>ATV0</b> сжатые цифровые ответы <br>
+<b>ATV1</b> развернутые "словесные" ответы. </blockquote>
+<i>Стандартный набор ответов модема</i> <table cellpadding="5" width="100%">
+<tbody><tr>
+<td>Ответ в символьном виде</td>
+<td>Ответ цифровым кодом</td>
+<td>Значение ответа</td>
+</tr>
+<tr>
+<td><b>OK</b></td>
+<td align="center"><b>0</b></td>
+<td>Модем успешно выполнил команду</td>
+</tr>
+<tr>
+<td><b>CONNECT</b></td>
+<td align="center"><b>1</b></td>
+<td>Модем подключен со скоростью 300 бит/с после команды X0 возможна работа со скоростью 600, 1200, 2400 бит/с.</td>
+</tr>
+<tr>
+<td><b>RING</b></td>
+<td align="center"><b>2</b></td>
+<td>Модем обнаружил правильный сигнал звонка. Ответ выдается всегда, независимо от режима работы.</td>
+</tr>
+<tr>
+<td><b>NO CARRIER</b></td>
+<td align="center"><b>3</b></td>
+<td>Модем потерял несущую или не получил ответ от удаленного модема.</td>
+</tr>
+<tr>
+<td><b>ERROR</b></td>
+<td align="center"><b>4</b></td>
+<td>Ошибка в командной строке. Командная строка длиннее 40 символов, или ошибка в контрольной сумме (смотри команду L2).</td>
+</tr>
+<tr>
+<td><b>CONNECT 1200</b></td>
+<td align="center"><b>5</b></td>
+<td>Модем подключен со скоростью 1200 бит/с, (смотри команды X1, X2, X3, X4).</td>
+</tr>
+<tr>
+<td><b>NO DIALTONE</b></td>
+<td align="center"><b>6</b></td>
+<td>Отсутствие сигнала станции коммутации (смотри комманды X2, X4).</td>
+</tr>
+<tr>
+<td><b>BUSY</b></td>
+<td align="center"><b>7</b></td>
+<td>Номер (канал) занят.</td>
+</tr>
+<tr>
+<td><b>NO ANSWER</b></td>
+<td align="center"><b>8</b></td>
+<td>Ответ получается в случае использования в командной строке 
+управляющего символа @ и если не выполнено условие - 5 сек тишины (см 
+команду D).</td>
+</tr>
+<tr>
+<td><b>CONNECT 600</b></td>
+<td align="center"><b>9</b></td>
+<td>Модем подключен со скоростью 600 бит/с, (смотри команды X1, X2, X3, X4). </td>
+</tr>
+<tr>
+<td><b>CONNECT 2400</b></td>
+<td align="center"><b>10</b></td>
+<td>Модем подключен со скоростью 2400 бит/с, (смотри команды X1, X2, X3, X4).</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATW</b></td>
+<td> <p>Сообщения о состоянии соединения. </p>
+<blockquote> Параметры: <b>0, 1, 2</b></blockquote>
+<blockquote><b>ATW0</b> Не сообщает скорость соединения и используемый протокол коррекции ошибок.<br>
+<b>ATW1</b> Сообщает скорость соединения и используемый протокол коррекции ошибок.<br>
+<b>ATW2</b> Не сообщает скорость соединения и используемый протокол 
+коррекции ошибок.При установке соединения на экране отображается строка 
+CONNECT и скорость по COM-порту.
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATX</b></td>
+<td> <p>Разрешение кодов ответа </p>
+<blockquote> Параметры: <b>0 ... 4</b><br>
+По умолчанию: <b>4</b></blockquote>
+<i>Выбор групп ответов модема связанных с процедурой набора номера:</i>
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tbody><tr>
+<td>&nbsp;</td>
+<td><b>X0</b></td>
+<td><b>X1</b></td>
+<td><b>X2</b></td>
+<td><b>X3</b></td>
+<td><b>X4</b></td>
+</tr>
+<tr>
+<td>Сообщение о связи</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Опоздание (S6 s)</td>
+<td>да</td>
+<td>да</td>
+<td>нет</td>
+<td>да</td>
+<td>нет</td>
+</tr>
+<tr>
+<td>Ожидание сигнала коммутатора</td>
+<td>нет</td>
+<td>нет</td>
+<td>да</td>
+<td>нет</td>
+<td>да</td>
+</tr>
+<tr>
+<td>Определение сигнала "занято"</td>
+<td>нет</td>
+<td>нет</td>
+<td>нет</td>
+<td>да</td>
+<td>да</td>
+</tr>
+</tbody></table>
+<p><strong>Сообщение о связи 1</strong> - обозначает, что модем после установления связи сообщит CONNECT, независимо от скорости работы. </p>
+<p><strong>Сообщение о связи 2</strong> - обозначает, что модем после 
+установления связи сообщит следующий ответ в зависимости от скорости 
+работы: CONNECT, CONNECT 600, CONNECT 1200
+CONNECT 2400. Ответ CONNECT обозначает работу со скоростью передачи 
+данных - 300 бит/с. </p>
+<p><strong>Опоздание (S6 s)</strong> - обозначает, что модем перед 
+набором телефонного номера, ожидает определенное в S-регистре S6 время. 
+Во многих странах существует требование определения сигнала централи 
+перед набором телефонного номера.</p>
+<p><strong>Ожидание сигнала коммутатора</strong> - обозначает, что модем
+ перед набором номера будет ожидать сигнала станции время, заданое в 
+регистре S6, а по истечении этого времени
+выдаст сообщение NO DIALTONE и перейдет в командный режим работы. </p>
+<p><strong>Определение сигнала "занято" номера</strong> - обозначает, что модем в случае занятости вызываемого номера, вадаст сообщение BUSY, и возвратится в командный режим работы.</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATY</b></td>
+<td> <p>Длинный разрыв </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+Эта команда позволяет пользователю разрешить или запретить 
+дополнительную возможность разрыва связи по состоянию "Длинная пауза или
+ длинный пробел" (Long Sрace) <blockquote><b>ATY0</b> Запретить длинный разрыв.<br>
+<b>ATY1</b> Разрешить длинный разрыв. Если модем получает непрерывный 
+сигнал разрыва от удаленного модема в течение более, чем 1.6 секунд, 
+модем "зависает". Если затем появляется команда ATH0 или DTR прерывает 
+связь (только при задействованной опции &amp;D2) модем разрывает 
+соединение и в течение 4 секунд передает сигнал разрыва, а затем 
+переходит в состояние ожидания.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>ATZ</b></td>
+<td> <p>Сброс модема </p>
+<blockquote> Параметры: нет <br>
+По умолчанию: не установлено </blockquote>
+Эта команда восстанавливает исходное состояние модема в соответствии с 
+параметрами, хранящимися в энергонезависимой памяти. Если модем был в 
+состоянии ON_LINE INTERACTIVE MODE, эта команда прерывает вызов и 
+переводит модем в состояние ожидания. Модем возвращается в холостой 
+режим после выполнения этой команды. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>+++</b></td>
+<td> Последовательность выхода. Благодаря этой команде можно перейти из 
+режима передачи данных в командный режим работы модема без перерыва 
+связи. Команда требует тишины перед и после направления 
+последовательности выхода. Величина этого времени определена в регистре 
+S12 ( обычно 50 = 1s ). Десятичную код знака ASCII, который явдяется 
+знаком последовательности выхода содержит регистр S2 ( обычно 43 т.е. 
+'+' ). </td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;C</b></td>
+<td> <p>Управление несущей</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;C0</b> (распознавание несущей данных) всегда задействовано (штырек 8 интерфейса RS232C). <br>
+<b>AT&amp;C1</b> включается при обнаружении несущей данных.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;D</b></td>
+<td> Управление сигналом DTR (готовность передачи данных) <blockquote> Параметры: <b>0 ... 3</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;D0</b> DTR всегда задействован.<br>
+<b>AT&amp;D1</b> При отсутствии сигнала DTR модем переходит в командный режим.<br>
+<b>AT&amp;D2</b> Модем переходит в состояние ожидания и возвращается в командный режим при прекращении сигнала DTR.<br>
+<b>AT&amp;D3</b> Модем инициализируется при прекращении сигнала DTR.
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;F</b></td>
+<td> <p>Загрузка S регистров из постоянной памяти (заводская установка)
+</p>
+<blockquote> Параметры: нет <br>
+По умолчанию: не установлено</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;G</b></td>
+<td> <p>Управление Guard тоном (сигналом предупреждения) </p>
+<blockquote> Параметры: <b>0 ... 2</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;G0</b> Нет Guard тона.<br>
+<b>AT&amp;G1</b> Guard тон 550 Гц.<br>
+<b>AT&amp;G2</b> Guard тон 1800 Гц. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;J</b></td>
+<td> <p>Выбор RJ11/RJ12 (Не реализовано)</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;J0</b> Не установлено.<br>
+<b>AT&amp;J1</b> Не установлено.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;L</b></td>
+<td> <p>Выбор арендуемой линии</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;L0</b> Выбор переключаемой линии.<br>
+<b>AT&amp;L1</b> Выбор арендуемой линии.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;M</b></td>
+<td> <p>Выбор синхронно/асинхронно </p>
+<blockquote> Параметры: <b>0 ... 3</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;M0</b> Асинхронный режим.<br>
+<b>AT&amp;M1</b> Синхронный режим 1 (Асинхронный набор).<br>
+<b>AT&amp;M2</b> Синхронный режим 2 (Набор хранимого в памяти номера).<br>
+<b>AT&amp;M3</b> Синхронный режим 3 (Контроль с помощью DTR сигнала 
+Data/Talk Mode - режим данные/разговор). Этот режим позволяет позвонить с
+ параллельного телефонного аппарата при выключенном сигнале DTR, 
+поговорить, после чего перевести модем в режим обмена данных путем 
+включения сигнала DTR. </blockquote>
+Примечание: Для модемов фирмы CALPAK команды AT&amp;M эквивалентны командам AT&amp;Q</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;P</b></td>
+<td> <p>Импульсный режим набора</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;P0</b> Для США отношение установить/прервать (39/61). <br>
+<b>AT&amp;P1</b> Для Англии отношение установить/прервать (33/67). </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;Q</b></td>
+<td> <p>Режим связи.(для модемов CALPAK эквивалентно AT&amp;M)</p>
+<blockquote> Параметры: <b>0-9</b><br>
+</blockquote>
+<blockquote><b>AT&amp;Q0</b> Асинхронная связь в прямом режиме. Скорость по COM-порту должна совпадать со скоростью связи по телефонной линии.<br>
+<b>AT&amp;Q1</b> Синхронный режим 1, для терминалов, работающих как в 
+синхронном так и в асинхронном режимах.Модем получает команды набора 
+номера в асинхронном виде, а затем переключается в синхронный режим. При
+ пропадании сигнала DTR или при потере несущей на время, превышающее 
+установленное, модем разрывает соединение и возвращается в асинхронный 
+режим. <br>
+<b>AT&amp;Q2</b> Синхронный режим 2, для синхронных терминалов и 
+хранения номеров абонентов. Асинхронный терминал сохраняет или меняет 
+номера телефонов ,вводимые по команде &amp;Z0 в конфигурацию 0 ПАЗУ. 
+Модем набирает номер при появлении сигнала DTR. Модем разрывает 
+соединение и возвращается в асинхронный режим при пропадании сигнала DTR
+ или при потере несущей на время, превышающее установленное в регистре 
+S10 (текущее - 1.4 с.).<br>
+<b>AT&amp;Q3</b> Синхронный режим 3, использует сигнал DTR в режиме 
+переключения голос/данные. Оператор вручную набирает номер при 
+выключенном сигнале DTR, затем включает сигнал DTR переводя модем в 
+режим данных. Модем разрывает соединение и возвращается в асинхронный 
+режим при пропадании сигнала DTR или при потере несущей на время, 
+превышающее установленное в регистре S10 (текущее - 1.4 с.)<br>
+<b>AT&amp;Q4</b> Команда зарезервирована.<br>
+<b>AT&amp;Q5</b> Режим коррекции ошибок. Модем устанавливает соединение 
+по протоколу коррекции ошибок. Если соединение по протоколу коррекции 
+ошибок не произошло то разрыв модемом соединения или установление 
+соединения в нормальном режиме определяется регистром S36. <br>
+<b>AT&amp;Q6</b> Асинхронная связь в нормальном режиме. Активирован 
+буфер модема, позволяющий установить скорость по последовательному порту
+ большую, нежели физическая скорость передачи данных по линии связи.<br>
+<b>AT&amp;Q7</b> Команда зарезервирована.<br>
+<b>AT&amp;Q8</b> Модем переходит в MNP-режим работы. Если регистр S36=1,
+ то модем, находясь в состоянии передачи данных устанавливает соединение
+ в непосредственном режиме. При ином значении S36 модем устанавливает 
+соединенние в MNP-режиме. Если MNP-режим не может быть установлен, то 
+модем переходит в непосредственный режим.<br>
+<b>AT&amp;Q9</b> Установление соединения по протоколу V.42bis. Если 
+соединение не может быть установлено, модем устанавливает связь по 
+протоколу V.42 ( LAP-M ).Если и это не возможно, модем переходит в 
+нормальный режим.<br>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;R</b></td>
+<td> <p>Управление сигналами RTS/CTS </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию:<b> 0</b></blockquote>
+<blockquote><b>AT&amp;R0</b> CTS следует за RTS.<br>
+<b>AT&amp;R1</b> CTS всегда включен.</blockquote>
+(Используется только в синхронном режиме) </td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;S</b></td>
+<td> <p>Сигнал DSR всегда включен </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;S0</b> Сигнал DSR всегда включен.<br>
+<b>AT&amp;S1</b> Сигнал DSR используется как обычно. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;T</b></td>
+<td> <p>Тест режимов</p>
+<blockquote> Параметры: <b>0...8</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT&amp;T0</b> Завершить выполняемый тест.<br>
+<b>AT&amp;T1</b> Инициализировать аналоговое самозамыкание.<br>
+<b>AT&amp;T2</b> Не используется.<br>
+<b>AT&amp;T3</b> Инициализировать цифровое самозамыкание.<br>
+<b>AT&amp;T4</b> Разрешить RDLB ответ.<br>
+<b>AT&amp;T5</b> Запретить RDLB ответ.<br>
+<b>AT&amp;T6</b> Инициализировать RDLB.<br>
+<b>AT&amp;T7</b> Инициализировать RDLB с самопроверкой. <br>
+<b>AT&amp;T8</b> Инициализировать ALB с самопроверкой. <br>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;V</b></td>
+<td> <p>Просмотр текущей конфигурации и пользовательских профайлов модема.</p>
+<blockquote> Параметры: нет<br>
+</blockquote>
+По этой команде на экране отобтажается активная 
+конфигурация,пользовательские профайлы, а также хранимые в памяти модема
+ телефонные номера. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;W</b></td>
+<td> <p>Записать S регистры в энергонезависимую память </p>
+<blockquote> Параметры: нет<br>
+</blockquote>
+Эта команда сохраняет текущие значения S регистров в энергонезависимой 
+памяти, откуда эти установки вызываются при включении питания или 
+командой ATZ.
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;X</b></td>
+<td> <p>Передача тактовых сигналов </p>
+<blockquote> Параметры: 0,1,2<br>
+По умолчанию: 0</blockquote>
+Эта команда используется для выбора источника тактовых сигналов (для штырька 15 интерфейса RS232C) при синхронной связи <blockquote><b>AT&amp;X0</b> Тактовые сигналы модема.<br>
+<b>AT&amp;X1</b> Тактовые сигналы от DTE.<br>
+<b>AT&amp;X2</b> Модем создает тактовые сигналы передачи из несущей получаемого сигнала. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;Y</b></td>
+<td> <p>Выбор активной конфигурации из существующих пользовательских профайлов.</p>
+<blockquote> Параметры: <b>0,1 </b> </blockquote>
+<blockquote><b>AT&amp;Y0</b> Загрузка пользовательского профайла 0 в активную конфигурацию. <br>
+<b>AT&amp;Y1</b> Загрузка пользовательского профайла 1 в активную конфигурацию. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT&amp;Z=n</b></td>
+<td> <p>Сохранить телефонный номер в энергонезависимой памяти </p>
+<blockquote> Параметры: n= любая строка цифр или набираемых символов не длиннее 32 знаков.</blockquote>
+Сохраняемый номер может быть набран с использованием ATDS команды. Можно сохранить только один номер. </td>
+</tr>
+</tbody></table>
+<h4 align="center"> Расширенное множество команд АТ</h4>
+<table cellpadding="5" width="100%">
+<tbody><tr> <td align="center" valign="top"><b>AT\A</b></td>
+<td> <p>Передача размера блока </p>
+<blockquote> Параметры: <b>0 ... 3</b><br>
+По умолчанию: <b>3</b></blockquote>
+<blockquote><b>AT\A0</b> 64 символа <br>
+<b>AT\A1</b> 128 символов <br>
+<b>AT\A2</b> 192 символа <br>
+<b>AT\A3</b> 256 символов </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\B</b></td>
+<td> <p>Передать разрыв для нормального режима данных (DATA MODE)</p>
+<blockquote> Параметры: <b>0...9 </b>(с шагом 100 мс.)<br>
+По умолчанию: <b>0</b></blockquote>
+Передает на удаленный модем сигнал разрыв из командного состояния. Для возобновления связи требуется команда ATO0. <p></p>
+<blockquote><b>AT\Bn</b> (n + 1)x100 , где n=0...9
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\G</b></td>
+<td> <p>Установка управления портом модема</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT\G0</b> Запретить управление портом модема. <br>
+<b>AT\G1</b> Включить Xon/Xoff - управление портом модема. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\K</b></td>
+<td> <p>Управление разрывом для надежного режима данных (RELI-ABLE DATA MODE) </p>
+<blockquote> Параметры: <b>1 ... 6</b><br>
+По умолчанию: <b>5</b></blockquote>
+Действие этой команды меняется в зависимости от текущего режима. В надежном или нормальном режимах: <p></p>
+<blockquote><b>AT\K0, AT\K2, AT\K4, AT\K5</b> Посылает разрыв параллельно получению данных.<br>
+<b>AT\K1</b> Очищает буферы данных и немедленно посылает разрыв на удаленный терминал или компьютер.<br>
+<b>AT\K3</b> Посылает разрыв на удаленный DTE немедленно.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\L</b></td>
+<td> <p>Потоковые данные при MNP-связи </p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>0</b></blockquote>
+<blockquote><b>AT\L0</b> Потоковая связь.<br>
+<b>AT\L1</b> Блоковая связь.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\N</b></td>
+<td> <p>Режим работы </p>
+<blockquote> Параметры: <b>0 ... 3</b><br>
+По умолчанию: <b>3</b></blockquote>
+<blockquote><b>AT\N0</b> Нормальный, не MNP-режим. В этом режиме, если 
+установка скорости выключена (AT\J0), последовательный порт и модем 
+может работать с разными скоростями только в течение соединения. <br>
+<b>AT\N1</b> Прямой режим. Это не MNP-режим, при котором нет буферирования данных и игнорируется управление потоком.<br>
+<b>AT\N2</b> Надежный режим. Это MNP-режим, при котором обнаружение 
+ошибки автоматически вызывает повтор передачи. Если удаленный модем не 
+находится в этом режиме, связь прерывается.<br>
+<b>AT\N3</b> Авто-надежный режим. Этот режим аналогичен надежному 
+режиму, за исключением того, что при невозможности установки связи в 
+надежном режиме из-за отсутствия этой возможности у удаленного модема, 
+устройство возвращается в не MNP-режим.<br>
+<b>AT\N4</b> Надежная связь только для протокола V.42. <br>
+<b>AT\N5</b> Авто-надежная связь только для протокола V.42.<br>
+<b>AT\N6</b> Надежная связь для V.42 и MNP.<br>
+<b>AT\N7</b> Авто-надежная связь для V.42 и MNP. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\O</b></td>
+<td> <p>Установление соединения в надежном режиме</p>
+По этой команде факс-модем устанавливает соединение в MNP-режиме, 
+независимо от того, является ли он запросчиком или ответчиком. Факсмодем
+ посылает до двух запросов на соединение. Если удаленный модем не 
+реагирует после второго запроса, модем возвращается в свое предыдущее 
+состояние. Эта команда должна быть записана последней в командной строке
+ и должна даваться после установления соединения с удаленным модемом.
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\U</b></td>
+<td> <p>Acceрt reliable mode control.</p>
+Modem waits uр to 12 seconds for a link request from the remote modem to
+ establish an MNP connection, regadless of whether the modem is in 
+originate or answer mode. If the remote modem does not resрond within 
+this time рeriod, the modem returns to its рrevious state. This command 
+must be the last command on the command line, and must be sent after a 
+рhysical connection has been made with a remote modem.
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\Y</b></td>
+<td> <p>Переключиться в надежный режим </p>
+<blockquote> Параметры: нет</blockquote>
+Устанавливает режим надежной связи после соединения в нормальном или прямом режиме. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT\Z</b></td>
+<td> <p>Переключиться в нормальный режим </p>
+<blockquote> Параметры: нет </blockquote>
+Переключиться в нормальный режим после установления связи в надежном 
+режиме. Переключение в нормальный режим стирает любые данные в буфере, а
+ также заставляет удаленное устройство переключиться в нормальный режим.
+ Эта команда может быть использована для скоростей передачи 2400 бод и 
+ниже. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%C</b></td>
+<td> <p>Контроль сжатия данных</p>
+<blockquote> Параметры: <b>0,1</b><br>
+По умолчанию: <b>1</b></blockquote>
+<blockquote> <b>AT%C0</b> Сжатие данных запрещено.<br>
+<b>AT%C1</b> Сжатие данных разрешено по протоколу MNP5.<br>
+<b>AT%C2</b> Сжатие данных разрешено по протоколу V42 bis.<br>
+<b>AT%C3</b> Сжатие данных разрешено по протоколу MNP5 &amp; V42 bis. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%D</b></td>
+<td> <p>Установление размера блока передачи при работе по протоколу V.42bis.</p>
+<blockquote> Параметры : <b>0,1,2,3 </b><br>
+</blockquote>
+<blockquote> <b>AT%D0</b> сигнал DCD всегда активен, <br>
+<b>AT%D1</b> сигнал DCD всегда активен, <br>
+<b>AT%D2</b> сигнал DCD всегда активен, <br>
+<b>AT%D3</b> сигнал DCD всегда активен, <br>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%E</b></td>
+<td> <p>Разрешение/запрещение автоповтора.</p>
+<blockquote>Параметры : <b>0,1</b><br>
+</blockquote>
+<blockquote> <b>AT%E0</b> Запрещение автоповтора.<br>
+<b>AT%E1</b> Разрешение автоповтора. </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%L</b></td>
+<td> <p>Сообщение об уровне принимаемого сигнала.</p>
+Возвращает значение, определяющее уровень принимаемого сигнала. <blockquote>Возможные значения: <br>
+009= Принимаемый уровень -9dBm<br>
+010= Принимаемый уровень -10dBm <br>
+011= Принимаемый уровень -11dBm <br>
+. <br>
+. <br>
+. <br>
+043= Принимаемый уровень -43dBm </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%M</b></td>
+<td> <p>Установка одно/двухсторонней компрессии V.42bis </p>
+<blockquote> Параметры : <b>0,1,2,3 </b><br>
+</blockquote>
+<blockquote> <b>AT%M0</b> Снятие компрессии.<br>
+<b>AT%M1</b> Компрессия только при передаче. <br>
+<b>AT%M2</b> Компрессия только при приеме.<br>
+<b>AT%M3</b> Двусторонняя компрессия. <br>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%P</b></td>
+<td> <p>Очистка кодирующего буфера при работе по V42bis <br>
+</p>
+Очищает буфер модема, работающего по V.42bis и посылает команду очистки на удаленный модем.
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%Q</b></td>
+<td> <p>Сообщение о качестве линейного сигнала </p>
+Сообщает качество линейного сигнала. Если значение равно 8 или больше и установлена команда AT%E1
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>AT%Sn</b></td>
+<td> <p>Установка максимальной длины строки при работе по протоколу V.42bis.</p>
+Устанавливает максимальное количество символов, которые могут быть сжаты в одно слово, n=6-250. Текущим является n=32.
+</td>
+</tr>
+</tbody></table>
+<h4 align="center"> Описание S регистров.</h4>
+<table cellpadding="5" width="100%">
+<tbody><tr> <td align="center" valign="top"><b>S0</b></td>
+<td> <p>Количество звонков до ответа (Хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0...255</b></blockquote>
+Устанавливает количество звонков, которые модем должен получить перед тем, как начнет процедуру автоответа. <blockquote>Величина от 1 до 125 включит автоответ<br>
+Величина 0 выключит автоответ.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S1</b></td>
+<td> <p>Счетчик звонков</p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0...255</b></blockquote>
+S1 - это регистр только для чтения, его значение увеличивается на 
+единицу каждый раз при получении сигнала звонка. Он автоматически 
+очищается, если в течении 8 секунд не поступит ни одного сигнала звонка.
+ </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S2</b></td>
+<td> <p>Символ кода Esc </p>
+<blockquote>По умолчанию: <b>43</b>, десятичное значение ASCII-символа "+" <br>
+Диапазон:<b>0...255</b></blockquote>
+S2 содержит ASCII-десятичную величину символа Esc. Значение больше чем 
+127 запретит обнаружение Esc кода. Этот Esc-код позволяет выйти из 
+режима данных (DATA MODE) и перейти в режим интерактивного обмена (ON 
+LINE INTRACTIVE MODE). </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S3</b></td>
+<td> <p>Символ возврата каретки</p>
+<blockquote>По умолчанию: <b>13</b>, десятичное значение ASCII- символа "CR". <br>
+Диапазон:<b>0...255</b></blockquote>
+S3 содержит десятичную величину символа возврата каретки. Этот символ 
+используется как окончание командной строки, а также как результирующий 
+код. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S4</b></td>
+<td> <p>Символ перевода строки <br>
+</p>
+<blockquote>По умолчанию: <b>10</b>, десятичное значение ASCII- символа "LF". <br>
+Диапазон:<b>0...255</b></blockquote>
+S4 содержит десятичную величину символа перевода строки. Этот символ 
+выдается после символа возврата каретки, если включен режим полного 
+результата командой ATV1. <p></p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S5</b></td>
+<td> <p>Символ возврата на шаг </p>
+<blockquote>По умолчанию: <b>8</b>, десятичное значение ASCII- символа "BS". <br>
+Диапазон:<b>0...255</b></blockquote>
+S5 содержит десятичную величину символа возврата на шаг. Во время ввода 
+команды при получении символа BS, имеет место следующая 
+последовательность: <blockquote>* Символ BS возвращается. <br>
+* На DTE выдается символ пробела (20H).<br>
+* Другой символ BS выдается на DTE. </blockquote>
+Если пользователь попытается вернуть на шаг первый командный символ, следующий за "AT", то ничего не будет возвращено.<br>
+Так как каждый символ BS может вызвать посылку на DTE до трех символов, 
+следует принять меры для недопущения передачи символов BS один за 
+другим. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S6</b></td>
+<td> <p>Ожидание тона набора </p>
+<blockquote>По умолчанию: <b>2 </b>десятичное<br>
+Диапазон:<b>0...255</b></blockquote>
+S6 содержит время в секундах, которое модем будет ждать перед набором 
+телефонного номера. Эта пауза введена для задержки тона набора после 
+выхода из состояния ожидания. Значение S6 игнорируется, если разрешены 
+ATX3 или ATX4. Если в S6 установлено значение меньшее, чем 2 секунды, 
+модем игнорирует эту величину и ожидает как минимум 2 секунды. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S7</b></td>
+<td> <p>Ожидание несущей после набора </p>
+<blockquote>По умолчанию: <b>30</b> десятичное<br>
+Диапазон:<b>0...255</b></blockquote>
+S7 содержит время в секундах, которое модем будет ждать появления 
+несущей после завершения набора номера. В режиме ответа в S7 содержится 
+время, в течение которого модем ждет появления несущей после посылки 
+тона ответа. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S8</b></td>
+<td> <p>Время паузы набора номера </p>
+<blockquote>По умолчанию: <b>2 </b>десятичное<br>
+Диапазон:<b>0...255</b></blockquote>
+S8 содержит время в секундах, в течение которого модем будет ждать при 
+получении запятой в строке набора номера. Эта возможность используется 
+для введения паузы в процессе набора номера для обеспечения задержек для
+ PBX обмена. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S9</b></td>
+<td> <p>Время ответа на обнаружение несущей </p>
+<blockquote>По умолчанию: <b>6</b> десятичное (600 миллисекунд)<br>
+Диапазон:<b>0...255 </b>(в 1/10 секунды)</blockquote>
+S9 содержит время в 1/10 секунды, в течение которого модем будет 
+выдавать тон ответа перед продолжением процедуры соединения. Это 
+позволяет увеличить время обнаружения в зашумленных линиях и при 
+нестандартных тоновых сигналах процедуры вызова, вызывающих ошибку 
+обнаружения несущей по протоколу BELL103.</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S10</b></td>
+<td> <p>Время ответа на потерю несущей <br>
+</p>
+<blockquote>По умолчанию: <b>14 </b>десятичное (1.4 секунды)<br>
+Диапазон:<b>0...255 </b>(в 1/10 секунды) <b><br>
+</b></blockquote>
+S10 устанавливает задержку между моментами потери несущей и 
+рассоединением модема. При увеличении этого времени модем становится 
+менее чувствительным к пропаданию сигналов в линии. При установке в 
+регистр S10 значения 255, модем игнорирует статус несущей и 
+функционирует таким образом, как будто несущая присутствует всегда. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S11</b></td>
+<td> <p>Длительность тона нажатия </p>
+<blockquote>По умолчанию: <b>95</b> десятичное (95 миллисекунд)<br>
+Диапазон:<b>0...255</b> миллисекунд </blockquote>
+S11 содержит длительность в миллисекундах тона нажатия и интервала. 
+Значение по умолчанию вызовет посылку в течение 95 миллисекунд тона 
+нажатия и 95-миллисекундный интервал между тонами. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S12</b></td>
+<td> <p>Время ограничения Esc-кода </p>
+<blockquote>По умолчанию: <b>50</b> десятичное (1 секунда)<br>
+Диапазон:<b>0...255 </b>(* 1/50 секунды) </blockquote>
+S12 содержит величину в 20 миллисекундных единицах времени разграничения
+ Esc-кода. Это время, в течение которого модем задерживает расшифровку 
+Esc-последовательности при получении Esc-кода. Поэтому, задержки прихода
+ следующих символов Esc-последовательности не должны превышать этого 
+времени. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S13</b></td>
+<td> <p>Зарезервировано </p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S14</b></td>
+<td> <p>Регистр битовой карты <br>
+</p>
+<blockquote>По умолчанию: см. ниже<br>
+Диапазон:<b>0...255</b> миллисекунд </blockquote>
+S14 содержит битовую карту некоторых внутренних состояний модема. Этот 
+регистр предназначен только для чтения. Запись в него может привести к 
+непредсказуемым результатам. <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ</div>
+</td>
+<td> <div align="center">СОСТОЯНИЕ</div>
+</td>
+<td> <div align="center">РЕГИСТР S14 </div>
+</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center"></div>
+</td>
+<td>Не используется </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Нет эха (ATE0)</td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Эхо включено (ATE1)</td>
+</tr>
+<tr> <td> <div align="center">2</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Результирующий код разрешен (ATQ0)</td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Результирующий код запрещен (ATQ1)</td>
+</tr>
+<tr> <td> <div align="center">3</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Цифровой код результата (ATV0)</td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Символьный код результат (ATV1) </td>
+</tr>
+<tr> <td> <div align="center">4</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Всегда 0</td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">5</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Тон набора </td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Пауза набора </td>
+</tr>
+<tr> <td> <div align="center">6</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Не используется </td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">7</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Ответ</td>
+</tr>
+<tr> <td> <div align="center"></div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Инициализация</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S15</b></td>
+<td> <p>Зарезервирован</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S16</b></td>
+<td> <p>Тест регистр </p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон: битовая карта </blockquote>
+S16 показывает статус тест-режимов модема. Тесты вызываются командой AT&amp;T. <blockquote>Бит 0 ALB <br>
+Бит 1 Зарезервирован<br>
+Бит 2 Локальная цифровая петля <br>
+Бит 3 Удаленная цифровая петля <br>
+Бит 4 IRT <br>
+Бит 5 IRT с самотестом <br>
+Бит 6 ALB с самотестом <br>
+Бит 7 Зарезервирован <br>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S17</b></td>
+<td> <p>Не используется </p>
+<blockquote>По умолчанию: не установлено<br>
+Диапазон:<b> 0</b></blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S18</b></td>
+<td> <p>Тест таймер (хранится в энергонезависимой памяти) </p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0...255 </b>секунд</blockquote>
+Содержимое S18 управляет длительностью тест-режимов. Установка 0 в S18 запрещает таймирование тестов. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S19</b>,<b>S20</b></td>
+<td> <p>Не используются </p>
+<blockquote>По умолчанию: не установлено <br>
+Диапазон:<b>0</b></blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S21</b></td>
+<td> <p>Регистр битовой карты (хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0...255</b></blockquote>
+S21 содержит битовую карту некоторых внутренних состояний модема. Этот 
+регистр предназначен только для чтения. Запись в него может привести к 
+непредсказуемым результатам. <blockquote>* Бит 0 0 RJ11 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 RJ12/RJ13 <br>
+* Бит 1 Не используется <br>
+* Бит 2 0 AT&amp;R0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 AT&amp;R1 <br>
+* Бит 3,4 Статус DTR <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ4</div>
+</td>
+<td> <div align="center">БИТ3</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Выдан DTR</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>DTR выдан в командный режим </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>DTR вызывает offline при выключении</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Модем инициализируется при выключении DTR </td>
+</tr>
+</tbody></table>
+* Бит 5 0 AT&amp;C0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 AT&amp;C1<br>
+* Бит 6 0 AT&amp;S0 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 AT&amp;S01<br>
+* Бит 7 0 Запрещен разрыв по длинной паузе <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Включен разрыв по длинной паузе </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S22</b></td>
+<td> <p>Регистр битовой карты (хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>76H</b><br>
+Диапазон:<b>0...255</b></blockquote>
+S22 содержит битовую карту некоторых внутренних состояний модема. Этот 
+регистр предназначен только для чтения. Запись в него может привести к 
+непредсказуемым результатам. <blockquote>* Бит 0,1 Контроль громкости <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ1</div>
+</td>
+<td> <div align="center">БИТ0</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Минимальная громкость </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Минимальная громкость </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Средняя громкость</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Максимальная громкость </td>
+</tr>
+</tbody></table>
+* Бит 2,3 Контроль звука <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ3</div>
+</td>
+<td> <div align="center">БИТ2</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Звук всегда выключен </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Звук включен до обнаружения несущей </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Звук всегда включен </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Звук включен до обнаружения несущей, но выключен во время набора номера </td>
+</tr>
+</tbody></table>
+* Бит 4,5,6 Статус результирующего кода <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ6</div>
+</td>
+<td> <div align="center">БИТ5</div>
+</td>
+<td> <div align="center">БИТ4</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td> ATX0</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>ATX1 </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>ATX2 </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>ATX3</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>ATX4</td>
+</tr>
+</tbody></table>
+* Бит 7 0 Статус импульсного набора AT&amp;P0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Статус импульсного набора AT&amp;P1 </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S23</b></td>
+<td> <p>Регистр битовой карты (Хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>07</b><br>
+Диапазон:<b>0...255</b></blockquote>
+S23 содержит битовую карту некоторых внутренних состояний модема. Этот 
+регистр предназначен только для чтения. Запись в него может привести к 
+непредсказуемым результатам. <blockquote>* Бит 0 0 Игнорировать запрос RDLB <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Ответить на запрос RDLB <br>
+* Бит 1,2 Скорость коммуникации
+<table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ2</div>
+</td>
+<td> <div align="center">БИТ1</div>
+</td>
+<td>СКОРОСТЬ</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>300 бод </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Не используется </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>1200 бод</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>2400 бод </td>
+</tr>
+</tbody></table>
+* Бит 3 Не используется <br>
+* Бит 4,5 Статус четности <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ5</div>
+</td>
+<td> <div align="center">БИТ4</div>
+</td>
+<td>СТАТУС</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Контроль по четности </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Контроль по пробелу </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Контроль по нечетности </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Контроль по метке </td>
+</tr>
+</tbody></table>
+* Бит 6,7 Выбор ограничивающего тона <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ7</div>
+</td>
+<td> <div align="center">БИТ6</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Нет ограничивающего тона </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>550 Гц</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>1800 Гц </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Не используется</td>
+</tr>
+</tbody></table>
+</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S24</b></td>
+<td> <p>Не используется </p>
+<blockquote>По умолчанию: Не установлено<br>
+Диапазон:<b> 0</b></blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S25</b></td>
+<td> <p>Задержка на DTR (Хранится в энергонезависимой памяти) <br>
+</p>
+<blockquote>По умолчанию: <b>5</b><br>
+Диапазон:<b>0...255 </b>секунд </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S26</b></td>
+<td> <p>Задержка сигнала RTS к сигналу CTS (Только для синхронного режима)(Хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>1</b><br>
+Диапазон:<b>0...255 </b>1/100 секунд </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S27</b></td>
+<td> <p>Регистр битовой карты Хранится в энергонезависимой памяти)</p>
+<blockquote>По умолчанию: <b>40H</b><br>
+Диапазон:<b>0...255 </b>секунд </blockquote>
+S27 содержит битовую карту некоторых внутренних состояний модема. Этот 
+регистр предназначен только для чтения. Запись в него может привести к 
+непредсказуемым результатам. <blockquote>* Бит 0,1 Режим передачи <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ1</div>
+</td>
+<td> <div align="center">БИТ0</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Асинхронный режим </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Синхронный режим 1 </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>Синхронный режим 2</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Синхронный режим 3</td>
+</tr>
+</tbody></table>
+* Бит 2,3 Не используются <br>
+* Бит 4,5 Режим передачи <table align="center" border="0" cellpadding="3" cellspacing="0" width="75%">
+<tbody><tr> <td> <div align="center">БИТ1</div>
+</td>
+<td> <div align="center">БИТ0</div>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>AT&amp;X0 </td>
+</tr>
+<tr> <td> <div align="center">0</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td> AT&amp;X1</td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">0</div>
+</td>
+<td>AT&amp;X2 </td>
+</tr>
+<tr> <td> <div align="center">1</div>
+</td>
+<td> <div align="center">1</div>
+</td>
+<td>Зарезервировано </td>
+</tr>
+</tbody></table>
+* Бит 6 0 CCITT V.22 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 BELL 212 <br>
+* Бит 7 Не используется </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S28</b></td>
+<td> <p>Зарезервированно.</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S29</b></td>
+<td> <p>Зарезервированно.</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S30</b></td>
+<td> <p>Таймер выключения.</p>
+Определяет как долго модем ждет перед рассоединением при отсутствии 
+приема или передачи данных. В режиме MNP или V.42 любые переданные или 
+принятые данные сбрасывают таймер. В других режимах таймер сбрасывают 
+переданные данные. Таймер отключен в синхронном режиме. <blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0...255</b> 1/10 секунды </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S31</b>-<b>S35</b></td>
+<td> <p>Зарезервированно.</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S36</b></td>
+<td> <p>Попытка установления соединения.</p>
+Этот регистр читается когда регистр S48 равен 128 или если попытка 
+установить соединение с защитой от ошибок не удалась.Опции перевода 
+модема в следующие состояния активируются немедленно, если S48=128.
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0 - 7</b></blockquote>
+<blockquote>S36=0 Модем разрывает связь.<br>
+S36=1 Модем не разрывая связь устанавливает соединение в непосредственном режиме.<br>
+S36=2 Резервировано.<br>
+S36=3 Модем не разрывая связь устанавливает соединение в нормальном режиме. <br>
+S36=4 При неудачной попытке соединения в MNP-режиме, модем разрывает связь. <br>
+S36=5 При неудачной попытке соединения в MNP-режиме, модем устанавливает связь в непосредственном режиме. <br>
+S36=6 Зарезервированно.<br>
+S36=7 При неудачной попытке соединения в MNP-режиме, модем устанавливает связь в нормальном режиме.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S37</b></td>
+<td> <p>Выбор желаемой скорости в линии. </p>
+<blockquote>По умолчанию: <b>0</b><br>
+Диапазон:<b>0 - 7</b></blockquote>
+<blockquote>
+S37=0 Установление соединения на скорости, равной скорости передачи 
+последней AT команды. В случае если скорость по последовательному порту 
+выше 9600 bрs, то факс-модем устанавливает соединение на скорости 9600 
+bрs.<br>
+S37=1-3 Устанавливает соединение на скорости 300 bрs.<br>
+S37=4 Зарезервировано.<br>
+S37=5 Устанавливает соединение на скорости 1200 bрs.<br>
+S37=6 Устанавливает соединение на скорости 2400 bрs. <br>
+S37=7 Зарезервировано.<br>
+S37=8 Устанавливает соединение на скорости 4800 bрs.<br>
+S37=9 Устанавливает соединение на скорости 9600 bрs.<br>
+S37=10 Устанавливает соединение на скорости 12000 bрs.<br>
+S37=11 Устанавливает соединение на скорости 14400 bрs<br>
+S37=12 Устанавливает соединение на скорости 7200 bрs.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S38</b></td>
+<td> <p>Задержка перед рассоединением.</p>
+<blockquote>По умолчанию: <b>20</b><br>
+Диапазон:<b>0...255</b></blockquote>
+<p>Определяет время между получением модемом команды ATH ( положить трубку ) и исполнением этой команды. </p>
+При работе по протоколу с защитой от ошибок этот регистр следует 
+использовать, чтобы не были потеряны данные в факс-модемном буфере при 
+разрыве соединения. Если значение данного регистра лежит в пределах от 0
+ до 254, то факсмодем ждет определенное время подтверждения от 
+удаленного модема о приеме всех данных перед разрывом соединения. Если 
+время истекло раньше, чем все данные были переданы то посылается 
+сообщение NO CARRIER. Если все данные переданы в установленное время, 
+посылается ответ OK <br>
+Если значение данного регистра равно 255, то факсмодем продолжает 
+пересылать буферизированные данные, пока не произойдет разрыв соединения
+ или все данные не будут переданы. </td>
+</tr>
+<tr> <td align="center" valign="top"><b>S39</b></td>
+<td> <p>Зарезервированно.</p>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S40</b></td>
+<td> <p>Битовая карта ( в скобках соответствующие команды ).</p>
+<blockquote>Биты 0,1 = автонадежный режим (\N3) <br>
+Биты 2,3,4 = управление сигналом разрыва (\K5)<br>
+Биты 5,6 = размер блока передачи 256 символов в MNP-режиме (\A3)<br>
+Бит 7 = запрещение управления потоком (\G0)</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S41</b></td>
+<td> <p>Битовая карта ( в скобках соответствующие команды ).</p>
+<blockquote>Бит 0 = запрещение сжатия данных (%C1)<br>
+Бит 1 = (%E0)<br>
+Бит 2 = режим передачи потока при MNP соединении (\L0) <br>
+Биты 3-7 = не использованы</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S46</b></td>
+<td> <p>Выбор протокола.</p>
+<blockquote>Значение: <b>136, 138</b></blockquote>
+Управление выбором сжатия. В дополнение к протоколу V.42bis факс-модем 
+так же использует сжатие данных по протоколу MNP 5. V.42bis используется
+ только с протоколом LAP-M, а MNP 5 только с MNP 4.
+<blockquote>S46=136 выполняется протокол с защитой от ошибок без сжатия.<br>
+S46=138 выполняется протокол с защитой от ошибок со сжатием.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S48</b></td>
+<td> <p>Установление соединения по протоколу V.42.</p>
+<blockquote>По умолчанию: <b>7</b><br>
+Значение: <b>0,7,128</b></blockquote>
+Определяет состояние удаленного модема. <blockquote>S48=0 Работает по протоколу LAP-M.<br>
+S48=7 Разрешает модему в случае невозможности работы по протоколу LAP-M, работу по другому протоколу.<br>
+S48=128 Согласно значению регистра S36, модем работает в соответствующем режиме ( в том числе и по MNP ). </blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S82</b></td>
+<td> <p>Break handing oрtion.</p>
+<blockquote>Range: 3,7,128 </blockquote>
+<blockquote>S82=3 exрedited, fax/modem send a break immediatly and data integrity is maintained ahead of and after the break.<br>
+S82=7 destructive; fax/modem send a break immediatly and databeing 
+рrocessed by each modem at the time of the break is discarded.<br>
+S82=128 is sequence; fax/modem send break in sequence with any 
+transmitted data; data integrity is maintained ahead of and after the 
+break.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S86</b></td>
+<td> <p>Коды ошибок.</p>
+<blockquote>Значение: 0,4,5,9,12,13,14 </blockquote>
+Когда факс-модем посылает сообщение NO CARRIER, соответствующее значение
+ помещается в этот регистр для выявления причин разрыва соединения.
+<blockquote>S86=0 Нормальное рассоединение, ошибки нет.<br>
+S86=4 Потеря несущей. <br>
+S86=5 Соединение по V.42 невозможно, так как удаленный модем не поддерживает данный протокол<br>
+S86=9 Протокол, общий для обоих модемов не найден. S86=12 Нормальное рассоединение, инициируемое удаленным модемом.<br>
+S86=13 Удаленный модем не отвечает после 10 передач одного сообщения.<br>
+S86=14 Нарушение протокола.</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S91</b></td>
+<td> <p>Прграммирование уровня передачи.</p>
+Уровень передачи изменяется от -0 dBm (американский стандарт) до -15 dBm
+ (японский стандарт) с шагом в 1 dBm для асинхронной и синхронной 
+передачи данных. Этот регистр используется для установки японских 
+параметров или выборе выделенной линии. Уровень передачи не может быть 
+изменен после установления соединения. S91=0 0 dBm (американский 
+стандарт) <blockquote>S91=1 -1 dBm<br>
+S91=2 -2 dBm <br>
+.<br>
+.<br>
+.<br>
+S91=15 -15 dBm</blockquote>
+</td>
+</tr>
+<tr> <td align="center" valign="top"><b>S95</b></td>
+<td> <p>Расширенные сообщения.</p>
+Биты, установленные в этом регистре могут замещать некоторые из Wn 
+командных опций. Бит, установленный в 1 в этом регистре вызывает 
+указанный код независимо от соответствующей Wn команды. <blockquote>Бит 0 Код CONNECT указывает физическую скорость установления соединения, а не скорость по COM-порту <br>
+Бит 1 Добавляет / ARQ к сообщению CONNECT, если протокол - NONE <br>
+Бит 2 Разрешается выдача сообщения CARRIER и значение несущей.<br>
+Бит 3 Разрешается выдача сообщения PROTOCOL и название протокола защиты от ошибок.<br>
+Бит 4 Зарезервированно.<br>
+Бит 5 Разрешается выдача сообщения COMPRESSION<br>
+Бит 6 Зарезервированно.<br>
+Бит 7 Зарезервированно </blockquote>
+</td>
+</tr>
+</tbody></table><br><br></td>
+<td width="12">&nbsp;</td>
+</tr>
+</tbody></table>
+<hr>
+<div align="center">
+&nbsp;|&nbsp;
+<a href="http://v90.kiev.ua/modem/">Модемы</a>&nbsp;|&nbsp;
+<a href="http://v90.kiev.ua/articles/">Статьи</a>&nbsp;|&nbsp;
+<a href="http://v90.kiev.ua/maintenance/search.html">Поиск по сайту</a>&nbsp;|&nbsp;
+<a href="http://v90.kiev.ua/maintance/feedback.html">Обратная связь</a>&nbsp;|&nbsp;
+<a href="http://v90.kiev.ua/maintenance/commerce_proposal.html">Реклама на сайте</a>&nbsp;|&nbsp;
+<hr width="100%">
+<br>
+
+
+ <noindex><a rel="nofollow" href="http://vcene.ua/bide-c/" target="_blank">Биде</a></noindex> <!--3a9f6b4e--><!--3a9f6b4e-->
+<br>
+Если Вы нашли ошибку на странице - выделите её мышью и нажмите Ctrl+Enter<br>
+<table border="0" cellpadding="1" cellspacing="1"><tbody><tr>
+<td>
+<!-- bigbn.com.ua 468x60-->
+<script language="jAvAscrIpt">
+//<!--
+d=document;
+rnd_num = Math.round((Math.random()*10000000));
+bbn_l='&'+escape((self!=top)?'f'+d.referrer:'h'+window.location.href);
+d.write('<iFrame src=http://ad0.bigmir.net/t.bbn?17026&0&f&'+rnd_num+bbn_l+
+' width=468 height=60 frameborder=0 vspace=0 hspace=0 marginwidth=0 marginheight=0 scrolling=no>');
+d.write('<noindex><a target=_blank  rel="nofollow" href=http://ad0.bigmir.net/c.bbn?17026&0&'+rnd_num+bbn_l+
+'><img src=http://ad0.bigmir.net/t.bbn?17026&0&i&'+rnd_num+bbn_l+' width=468 height=60 border=0 alt="BigBN Common"></a></noindex></iFrame>');
+//--></script><iframe src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/t.htm" vspace="0" hspace="0" marginwidth="0" marginheight="0" frameborder="0" height="60" scrolling="no" width="468">&lt;noindex&gt;&lt;a
+ target=_blank  rel="nofollow" 
+href=http://ad0.bigmir.net/c.bbn?17026&amp;0&amp;1860781&amp;hhttp%3A//v90.kiev.ua/articles/at_commands.html&gt;&lt;img
+ 
+src=http://ad0.bigmir.net/t.bbn?17026&amp;0&amp;i&amp;1860781&amp;hhttp%3A//v90.kiev.ua/articles/at_commands.html
+ width=468 height=60 border=0 alt="BigBN 
+Common"&gt;&lt;/a&gt;&lt;/noindex&gt;</iframe>
+<!-- bigbn.com.ua 468x60-->
+</td>
+<td>
+<!-- bigmir)net TOP 100 --><noindex><a rel="nofollow" href="http://www.bigmir.net/" target="_blank" onclick='img = new Image();img.src="http://www.bigmir.net/?cl=146617";'><script language="javascript"><!--
+bmQ='<img src=http://c.bigmir.net/?s146617&t5'
+bmD=document
+bmD.cookie="b=b"
+if(bmD.cookie)bmQ+='&c1'
+//--></script><script language="javascript1.2"><!-- bmS=screen;bmQ+='&d'+(bmS.colorDepth?bmS.colorDepth:bmS.pixelDepth)+"&r"+bmS.width;
+//--></script><script language="javascript"><!--
+bmF = bmD.referrer.slice(7);
+((bmI=bmF.indexOf('/'))!=-1)?(bmF=bmF.substring(0,bmI)):(bmI=bmF.length);
+if(bmF!=window.location.href.substring(7,7+bmI))bmQ+='&f'+escape(bmD.referrer);
+bmD.write(bmQ+" border=0 width=88 height=31 alt='bigmir TOP100'>");
+//--></script><img src="=%5B%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20AT-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%BE%D0%B2%20%5D=%20%20%20%D0%92%D1%81%D0%B5%20%D0%BE%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BC%D0%B0%D1%85_files/a.png" alt="bigmir TOP100" border="0" height="31" width="88"></a></noindex>
+</td>
+</tr><tr><td>
+</td>
+</tr></tbody></table>
+</div>
+<br><center> http://adriano.com.ua/ <a href="http://adriano.com.ua/" target="_blank">доставка пиццы киев</a>  |  Свежая информация <a href="http://ru.navirec.com/oborudovanie/terminaly/teltonika-fm1100/" target="_blank">teltonika fm1100 на нашем сайте</a>. </center>
+ </body></html>

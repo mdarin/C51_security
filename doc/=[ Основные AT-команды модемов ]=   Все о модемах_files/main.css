@@ -1,0 +1,52 @@
+body,td,th,form,li,ul {font-family: arial, tahoma, helvetica, sans-serif; font-size:10pt; ccolor:2d4a68;}
+a {text-decoration:none;}
+.header   {font-size: 13pt; font-family:verdana; font-weight:bbold; color:black}
+
+h1 {font-family: arial; font-size:16pt; font-weight:bold;}
+h2 {font-family: arial; font-size:14pt; font-weight:bold;}
+h3 {font-family: arial; font-size:12pt; font-weight:bold;}
+
+input, select, textarea {font-family:verdana, arial, helvetica; font-size:8pt;}
+hr.thin  {color:326a85; height:1; width:100%;}
+hr.thin2 {color:326a85; height:1;}
+
+a:link    {color:326a85;}
+a:active  {color:012286}
+a:visited {color:326a85;}
+a:hover   {color:326a85;text-decoration:underline;}
+
+
+p {text-align:justify}
+
+#
+# Woody
+#
+
+
+div.menu
+{
+  margin-top: 1em;
+}
+
+div.menu div.menu-item
+{
+  border: 1px solid #ccc;
+  margin: 1px;
+  vertical-align: middle;
+  padding: 0.25em;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #eee;
+  text-transform: lowercase;
+}
+
+div.buttons
+{
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+div.buttons div.button
+{
+  margin-top: 0.5em;
+}
